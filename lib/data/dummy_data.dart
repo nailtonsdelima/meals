@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import '../models/category.dart';
 
-const dummyCategories = [
+// ignore: constant_identifier_names
+const DUMMY_CATEGORIES = [
   Category(
     id: 'c1',
     title: 'Italiano',
