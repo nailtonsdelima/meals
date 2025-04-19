@@ -14,12 +14,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
+        // parametro abaixo está subtituindo o canvas color do projeto inicial
+        scaffoldBackgroundColor: const Color.fromRGBO(255, 254, 229, 1),
+        fontFamily: 'Raleway',
+        textTheme: ThemeData.light().textTheme.copyWith(
+              titleMedium: const TextStyle(
+                fontSize: 20,
+                fontFamily: 'RobotoCondensed',
+              ),
+            ),
         // primarySwatch: Colors.blue,
         appBarTheme: const AppBarTheme(
           centerTitle: true,
-          backgroundColor: Colors.lightBlue,
+          backgroundColor: Colors.pink,
           titleTextStyle: TextStyle(
-            fontFamily: 'OpenSans',
+            fontFamily: 'RobotoCondensed',
             color: Colors.white,
             fontSize: 22,
             fontWeight: FontWeight.bold,

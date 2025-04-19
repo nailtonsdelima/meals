@@ -12,7 +12,10 @@ class CategoryItem extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(15),
       // ignore: sort_child_properties_last
-      child: Text(category.title),
+      child: Text(
+        category.title,
+        style: Theme.of(context).textTheme.titleMedium,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
         gradient: LinearGradient(
