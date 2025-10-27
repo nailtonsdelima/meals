@@ -1,15 +1,16 @@
-import 'package:flutter/foundation.dart';
+// import 'package:flutter/foundation.dart';
 
+// ignore_for_file: constant_identifier_names
 enum Complexity {
-  simple,
-  medium,
-  difficult,
+  Simple,
+  Medium,
+  Difficult,
 }
 
 enum Cost {
-  cheap,
-  fair,
-  expensive,
+  Cheap,
+  Fair,
+  Expensive,
 }
 
 class Meal {
