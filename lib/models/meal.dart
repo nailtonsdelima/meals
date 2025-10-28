@@ -1,6 +1,8 @@
 // import 'package:flutter/foundation.dart';
 
 // ignore_for_file: constant_identifier_names
+// import 'package:flutter/material.dart';
+
 enum Complexity {
   Simple,
   Medium,
@@ -43,4 +45,32 @@ class Meal {
     required this.complexity,
     required this.cost,
   });
+
+  // ignore: non_constant_identifier_names
+  String get ComplexityText {
+    switch (complexity) {
+      case Complexity.Simple:
+        return 'Simples';
+      case Complexity.Medium:
+        return 'Normal';
+      case Complexity.Difficult:
+        return 'Difícil';
+      default:
+        return 'Desconhecido';
+    }
+  }
+
+  // ignore: non_constant_identifier_names
+  String get CostText {
+    switch (cost) {
+      case Cost.Cheap:
+        return 'Barato';
+      case Cost.Fair:
+        return 'Justo';
+      case Cost.Expensive:
+        return 'Caro';
+      default:
+        return 'Desconhecido';
+    }
+  }
 }
