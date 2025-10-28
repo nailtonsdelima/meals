@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/categories_screen.dart';
 import 'screens/categories_meals_screen.dart';
+import 'screens/meal_detail_screen.dart';
 import 'Utils/app_routes.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false, // Essa linha remove o banner
       title: 'Vamos Cozinhar?',
       theme: ThemeData(
         // parametro abaixo está subtituindo o canvas color do projeto inicial
@@ -40,6 +42,7 @@ class MyApp extends StatelessWidget {
       routes: {
         AppRoutes.HOME: (ctx) => CategoriesScreen(),
         AppRoutes.CATEGORIES_MEALS: (ctx) => CategoriesMealsScreen(),
+        AppRoutes.MEAL_DETAIL: (ctx) => const MealDetailScreen(),
       },
     );
   }
